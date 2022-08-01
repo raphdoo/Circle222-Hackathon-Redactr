@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <div class="card">
+            <div class="logo">
+                <h3>Red<span>actr</span>- Circle<span>222</span></h3>
+
+            </div>
+            <div class="form">
+                <div class="inputTab">
+                    <label for="textInput">Full text:<sup>*</sup></label>
+                    <input type="text" name="textInput" id="textInput" placeholder="Enter your text here...">
+                </div>
+                <div class="inputTab">
+                    <label for="scrambleText">Word/Words to redact:<sup>*</sup></label>
+                    <input type="text" name="scrambleText" id="scrambleText" placeholder="please seperate mutiple words with a ','"> 
+                </div>
+                <div class="inputTab">
+                    <label for="replaceText">Replace with:</label>
+                    <input type="text" name="replaceText" id="replaceText" placeholder="Please enter a 7-letter word...">
+                </div>
+                <button type="button" id="btn">Send</button>
+            </div>
+            <div class="output">
+                <div class="result">
+                    <h4>Result</h4>
+                </div>
+                <p>Output: <span class="newText" id="outputText"></span></p>
+                <p>Number of words Scanned: <span class="newText" id="numberScanned"></span></p>
+                <p>Execution time: <span class="newText" id="executionTime"></span></p>
+
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
